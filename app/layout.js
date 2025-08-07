@@ -4,12 +4,12 @@ import { Outfit, Ovo } from "next/font/google";
 import "./globals.css";
 
 // Set up fonts with language subsets
-const Outfit = Outfit({
+const outfit = Outfit({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
 
-const Ovo = Ovo({
+const ovo = Ovo({
   subsets: ["latin"],
   weight: ["400"],
 });
@@ -24,7 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${Outfit.className} ${Ovo.className} antialiased`}>
+      <body className={`${outfit.className} ${ovo.className} antialiased`}>
         {children}
       </body>
     </html>
